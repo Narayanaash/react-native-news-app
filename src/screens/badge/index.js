@@ -10,7 +10,7 @@ import {
   Text,
   Left,
   Right,
-  Body
+  Body,
 } from "native-base";
 import styles from "./styles";
 
@@ -62,7 +62,7 @@ class NHBadge extends Component {
             style={{ backgroundColor: "black" }}
             textStyle={{ color: "white" }}
           >
-            <Text>1866</Text>
+            <Text>166</Text>
           </Badge>
         </Content>
       </Container>
