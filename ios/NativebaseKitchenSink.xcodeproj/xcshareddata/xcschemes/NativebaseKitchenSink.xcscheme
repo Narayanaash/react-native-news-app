@@ -43,8 +43,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "NativebaseKitchenSinkTests.xctest"
-               BlueprintName = "NativebaseKitchenSinkTests"
+               BuildableName = "Feknews.xctest"
+               BlueprintName = "Feknews"
                ReferencedContainer = "container:NativebaseKitchenSink.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -61,8 +61,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "NativebaseKitchenSinkTests.xctest"
-               BlueprintName = "NativebaseKitchenSinkTests"
+               BuildableName = "Feknews.xctest"
+               BlueprintName = "Feknews"
                ReferencedContainer = "container:NativebaseKitchenSink.xcodeproj">
             </BuildableReference>
          </TestableReference>

@@ -21,34 +21,44 @@ const datas = [
     name: "Home",
     route: "Home",
     icon: "home",
-    bg: "#AB6AED"
+    bg: "#AB6AED",
   },
   {
     name: "Entertainment",
-    route: "Anatomy",
+    route: "Entertainment",
     icon: "paper",
-    bg: "#48525D"
+    bg: "#48525D",
   },
   {
     name: "Sports",
-    route: "Anatomy",
+    route: "Sport",
     icon: "paper",
-    bg: "#48525D"
+    bg: "#48525D",
   },
   {
-    name: "Notification",
-    route: "Anatomy",
-    icon: "notifications",
-    bg: "red",
-    types: "3"
+    name: "Corona",
+    route: "Corona",
+    icon: "paper",
+    bg: "#48525D",
   },
   {
-    name: "Dark Theme",
-    route: "Anatomy",
-    icon: "eye",
-    bg: "",
-    theme: "1"
-  }
+    name: "Politics",
+    route: "Politics",
+    icon: "paper",
+    bg: "#48525D",
+  },
+  {
+    name: "Business",
+    route: "Business",
+    icon: "paper",
+    bg: "#48525D",
+  },
+  {
+    name: "Movies",
+    route: "Movies",
+    icon: "paper",
+    bg: "#48525D",
+  },
 ];
 
 class SideBar extends Component {
@@ -56,7 +66,7 @@ class SideBar extends Component {
     super(props);
     this.state = {
       shadowOffsetWidth: 1,
-      shadowRadius: 4
+      shadowRadius: 4,
     };
   }
 
@@ -69,12 +79,13 @@ class SideBar extends Component {
         >
           <Image source={drawerCover} style={styles.drawerCover} />
           <Text style={styles.fakenews}>
-            <Icon name="globe" style={{color: "#fff", fontSize: 35}} /> FEKNEWS
+            <Icon name="globe" style={{ color: "#fff", fontSize: 35 }} />{" "}
+            FEKNEWS
           </Text>
 
           <List
             dataArray={datas}
-            renderRow={data =>
+            renderRow={(data) => (
               <ListItem
                 button
                 noBorder
@@ -86,15 +97,13 @@ class SideBar extends Component {
                     name={data.icon}
                     style={{ color: "#777", fontSize: 26, width: 30 }}
                   />
-                  <Text style={styles.text}>
-                    {data.name}
-                  </Text>
+                  <Text style={styles.text}>{data.name}</Text>
                 </Left>
-                {data.types &&
+                {data.types && (
                   <Right style={{ flex: 1 }}>
                     <Badge
                       style={{
-                        borderRadius: 25/2,
+                        borderRadius: 25 / 2,
                         height: 25,
                         width: 25,
                         backgroundColor: data.bg,
@@ -104,12 +113,15 @@ class SideBar extends Component {
                         style={styles.badgeText}
                       >{`${data.types} Types`}</Text>
                     </Badge>
-                  </Right>}
-                  {data.theme &&
-                  <Right style={{flex: 1}}>
+                  </Right>
+                )}
+                {data.theme && (
+                  <Right style={{ flex: 1 }}>
                     <Switch value={false} />
-                  </Right>}
-              </ListItem>}
+                  </Right>
+                )}
+              </ListItem>
+            )}
           />
         </Content>
       </Container>
