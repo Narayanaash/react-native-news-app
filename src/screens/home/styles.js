@@ -1,6 +1,6 @@
 export default {
   container: {
-    backgroundColor: "#eee"
+    backgroundColor: "#eee",
   },
   logo: {
     borderWidth: 1,
@@ -9,6 +9,6 @@ export default {
     borderBottomRightRadius: 5,
     paddingLeft: 5,
     paddingRight: 5,
-    marginLeft: -10
+    marginLeft: -10,
   },
 };
